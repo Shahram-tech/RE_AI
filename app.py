@@ -9,7 +9,7 @@ from langchain.chains import ConversationChain
 airbnb_data = pd.read_csv("d.csv")
 
 # Initialize OpenAI language model
-llm = OpenAI(temperature=0, openai_api_key="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")
+llm = OpenAI(temperature=0, openai_api_key="api-key")
 memory = ConversationBufferMemory(llm=llm, max_token_limit=100)
 
 app = Flask(__name__)
